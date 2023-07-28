@@ -8,6 +8,6 @@
 <hr />
 <h4>Styling Specialities: @Html.DisplayFor(model => model.Specialty)</h4>
 
-<p>@Html.ActionLink("Update Information", "Edit")</p>
-<p>@Html.ActionLink("Delete this Stylist", "Delete")</p>
+<p>@Html.ActionLink("Update Information", "Edit", new {id = Model.StylistId})</p>
+<p>@Html.ActionLink("Delete this Stylist", "Delete", new {id = Model.StylistId})</p>
 <p>@Html.ActionLink("Back to Stylist List", "Index")</p>
