@@ -1,7 +1,13 @@
-namespace ProjectName.Models
+namespace HairSalon.Models
 {
-    public class ClassName
+    public class Client
     {
-        // Business Logic goes here.
+        public int ClientId { get; set;}
+        public string First_Name { get; set;}
+        public string Last_Name { get; set;}
+        public string Phone_Number { get; set;}
+        public string Email { get; set;}
+        public int StylistId { get; set;}
+        public Stylist Stylist {get; set;}
     }
 }
