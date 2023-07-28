@@ -68,6 +68,14 @@ namespace HairSalon.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");        
         }
+
+        [HttpPost]
+        public ActionResult Create(Client client)
+        {
+            _db.Clients.Add(client);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
 
