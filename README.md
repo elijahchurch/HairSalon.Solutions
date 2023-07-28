@@ -1,13 +1,16 @@
-#  Title
+#  Eau Claire's Salon Managament App
 
 #### By: Jason Elijah Church
 
-#### Brief Description
+#### A web application where Eau Claire can store information on her stylist employees and their clients.
 
 ## Technologies Used
 * C#
 * Markdown
 * Git Bash
+* Razor
+* SQL
+* MySQL Workbench
 * Visual Code Studio
 * .NET
 
@@ -17,13 +20,15 @@
 ## Setup/ Installation Requirements
 
 1. Clone this repo.
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ProjectName".
-3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
-4. Optionally, you can run "dotnet build" to compile this console app without running it.
-5. To run the tests for this project, navigate to this project's test directory called "ProjectName.Tests".
-6. in the command line, run the command "dotnet restore" then "dotnet test" to run all the tests that are found in the ModelTests directory.
+2. The database structure for this project can be found and recreated by accessing the jason_church.sql file in the root directory.
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "HairSalon" and create a new file called appsettings.json.
+3. Within the appsettings.json file, add this line of code: { "ConnectionStrings": { "DefaultConnection": "Server=localhost;Port=3306;database=jason_church;uid=root;pwd=epicodus;"}}
+4. Note: you may have to edit the uid and pwd depending if your username and password are different with mySQL.
+5. While in the production folder of this application ("HairSalon"), in the command line, run the command "dotnet watch run" to compile and execute the application.
+6. Note: There are no instructions for running tests for this repo because there were no custom methods that needed testing. The HairSalon.Tests directory and its files were just created off a template and don't contain anything aside from boilerplate code.
 
 ## Known Bugs
+Currently no found bugs, but I ran into an issue figuring out how to route the user back to a specific stylist page when they create or update a client. The quick fix I implemented was just to route the user back to the Index page of stylists, which contains a list of all the stylists. 
 
 
 ## License
