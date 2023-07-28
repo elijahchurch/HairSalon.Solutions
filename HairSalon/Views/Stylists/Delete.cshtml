@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h2> Confirm you want to delete @Html.DisplayFor(model => model.First_Name) @Html.DisplayFor(model => model.Last_Name) from your list of Stylists by clicking the "Delete" button.</h2>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete">
+}
+<br>
+<p>Otherwise click this link to go back your Stylists page: @Html.ActionLink("Stylists", "Index")</p>
