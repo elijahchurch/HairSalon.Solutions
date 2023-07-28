@@ -13,4 +13,4 @@
 
 <p>@Html.ActionLink("Update Client Information", "Edit", new {id = Model.ClientId})</p>
 <p>@Html.ActionLink("Delete this Client", "Delete", new {id = Model.ClientId})</p>
-<p>@Html.ActionLink("Back to Stylist List", "Index", "Stylists")</p>
+<p>@Html.ActionLink("Back", "Details", "Stylists", new {id = Model.Stylist.StylistId})</p>
