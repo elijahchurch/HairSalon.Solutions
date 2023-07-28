@@ -13,12 +13,12 @@
     <h3>No stylists have been added to Eau Claire's database.</h3>
 }
 
-<ul>
+
 @foreach (Stylist stylist in Model)
 {
-    <li>@Html.ActionLink($"{stylist.First_Name} {stylist.Last_Name}", "Details", new {id = stylist.StylistId})</li>
+    <h3>@Html.ActionLink($"{stylist.First_Name} {stylist.Last_Name}", "Details", new {id = stylist.StylistId})</h3>
 }
-</ul>
+
 
 <p>@Html.ActionLink("Add a Stylist", "Create")</p>
 
