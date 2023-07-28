@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
-    public Class StylistsController : Controller
+    public class StylistsController : Controller
     {
         private readonly HairSalonContext _db;
         public StylistsController(HairSalonContext db)
