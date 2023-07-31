@@ -16,6 +16,8 @@
 
 ## Description:
 
+This website was primarily made with C#. It contains functionality for the user to enter and store information about stylists and their clients in a database. The local database is accessed with a DBcontext class and built-in methods are called upon it to search, add, remove and save information using the directive Entity Framework Core. Routing to different views is streamlined using Html helper methods to create forms and links. 
+
 
 ## Setup/ Installation Requirements
 
